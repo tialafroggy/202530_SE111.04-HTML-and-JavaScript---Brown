@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Tshauni Brown">
+    <meta name="description" content="A tribute site to the movie Barbie.">
+    <title>Hi</title>
+</head>
+<body>
+    <script>
+        var hourly = Number(prompt(`What is your hourly pay?`))
+        var worked = Number(prompt(`How many hours did you work this week?`))
+        var gross = (hourly * worked).toFixed(2)
+        var tax = (gross * .2).toFixed(2)
+        var net = (gross - tax).toFixed(2)
+
+        console.log(`Your gross pay for the week is ${gross}`)
+        console.log(`Your net pay for the week is ${net}`)
+        console.log(`Uncle Sam takes ${tax}`)
+
+        alert(`
+        Gross pay: ${gross}\n
+        Net Pay: ${net}\n
+        Uncle Sam: ${tax}
+        `)
+
+    </script>
+</body>
+</html>
